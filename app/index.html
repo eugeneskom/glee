@@ -1,14 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
+  <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline' ;>
   <title>Gulp start</title>
-  <link rel="stylesheet" href="style.min.css">
+
+
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  Lorem ipsum, dolor sit amet
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">home +</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">about</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">services</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">pages +</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">news</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__search" href="#">
+            <img src="images/icons/search.png" alt="" class="user-nav__img">
+          </a>
+          <div class="user-nav__combine">
+            <a class="user-nav__link user-nav__link-inner" href="#">
+              <img src="images/icons/heart.png" alt="" class="user-nav__img">
+              <div class="user-nav__num">0</div>
+            </a>
+            <a class="user-nav__link user-nav__link-inner" href="#">
+              <img src="images/icons/cart.png" alt="" class="user-nav__img">
+              <div class="user-nav__num">0</div>
+            </a>
+          </div>
+
+          <a class="user-nav__link user-nav__menu" href="#">
+            <img src="images/icons/menu.png" alt="" class="user-nav__img">
+          </a>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="header__slider">
+          <div class="header__item">
+            <div class="header__text">
+              <div class="title header__title">smart and trendy</div>
+              <p class="header__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              </p>
+              <button class="btn">shop now <img src="images/arrow.png" alt="arrow icon" class="arrow"></button>
+            </div>
+            <div class="header__img">
+              <img src="images/sofa.png" alt="">
+            </div>
+          </div>
+          <!-- <div class="header__item">
+            <div class="header__text">
+              <div class="title header__title">smart and trendy</div>
+              <p class="header__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              </p>
+              <button class="btn">shop now</button>
+            </div>
+            <div class="header__img">
+              <img src="images/sofa.png" alt="">
+            </div>
+          </div> -->
+          <!-- <div class="header__item">
+            <div class="header__text">
+              <div class="title header__title">smart and trendy</div>
+              <p class="header__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              </p>
+              <button class="btn">shop now</button>
+            </div>
+            <div class="header__img">
+              <img src="images/sofa.png" alt="">
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__contact">
+          <a href="#" class="logo footer__logo">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <address class="address">
+            ADDRESS: 4772 Wines Lane
+            Houston, TX 77032
+          </address>
+          <a href="tel:+8323475843" class="phone"><span class="phone__text">telephone</span>: +832 347 5843</a>
+          <a href="mailto:contact@Glee.com" class="email"><span class="email__text">email</span>: contact@Glee.com</a>
+        </div>
+
+
+        <div class="footer__services">
+          <h6 class="title footer__title">services</h6>
+          <ul class="footer__list">
+            <li class="footer__item">about us</li>
+            <li class="footer__item">return policy</li>
+            <li class="footer__item">our blog</li>
+            <li class="footer__item">contact us</li>
+            <li class="footer__item">terms & condition</li>
+          </ul>
+        </div>
+        <div class="footer__account">
+          <h6 class="title footer__title">account</h6>
+          <ul class="footer__list">
+            <li class="footer__item">your account</li>
+            <li class="footer__item">checkout</li>
+            <li class="footer__item">login</li>
+            <li class="footer__item">register</li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h6 class="title footer__title">newsletter</h6>
+          <p class="footer__newsletter-text">
+            Subscribe by our newsletter and get update protidion.
+          </p>
+          <form action="#" class="footer__form">
+            <input type="email" class="footer__email">
+            <button class="btn footer__submit" type="submit">subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <p class="footer__reserved">&copy;2020 CopyRight Example. All rights reserved.</p>
+        <ul class="footer__copy-list">
+          <li class="footer__copy-item">home</li>
+          <li class="footer__copy-item">about</li>
+          <li class="footer__copy-item">blog</li>
+          <li class="footer__copy-item">contact</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

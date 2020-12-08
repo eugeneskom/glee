@@ -1,7 +1,208 @@
 @import 'vars';
 @import 'fonts';
+@import 'slick';
+@import 'slick-theme';
 @import 'reset';
 @import 'global';
+
+body{
+  color: $mainText;
+}
+
+
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.menu__list{
+  display: flex;
+}
+
+.menu__item + .menu__item{
+  margin-left: 32px;
+}
+
+.menu__link{
+  color: inherit;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.user-nav{
+  display: flex;
+
+  &__combine{
+    display: flex;
+    background-color: $mainBg;
+    padding: 20px 8px 14px;
+    border-radius: 22px;
+    margin: 0 20px;
+  }
+  &__link-inner{
+    padding: 0 32px;
+    position: relative;
+  }
+  &__num{
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    left: 45px;
+  }
+  &__search{
+    background-color: #edf1f4;
+    padding: 20px;
+    border-radius: 50%;
+  }
+  &__menu{
+    padding: 15px 16px;
+    background-color: $secondaryBg;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.header__content{
+  background-color: $mainBg;  
+  
+  
+}
+.header{
+  &__slider{
+    padding: 100px 185px 85px 300px;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    font-size: 72px;
+    text-transform: uppercase;
+    @extend %rubik-500;
+    margin-bottom: 35px;
+  }
+  &__text{
+    max-width: 420px;
+  }
+  
+  &__desc{
+    @extend %rubik-400;
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+}
+
+.footer{
+  @extend %rubik-400;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 0 75px;
+    border-bottom: 1px solid #dae4e9;
+  }
+  &__copy{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @extend %DMS-700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  &__logo{
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__contact{
+    max-width: 200px;
+  }
+  &__contact a{
+    color: inherit;
+    text-transform: capitalize;
+  }
+  .address{
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .phone__text,
+  .email__text{
+    text-transform: uppercase;
+    text-transform: capitalize;
+  }
+  .phone{
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__services,
+  &__account{
+    text-transform: capitalize;
+  }
+  &__item{
+    margin-bottom: 15px;
+    @extend %rubik-500;
+  }
+  &__newsletter{
+    max-width: 270px;
+    line-height: 1.5;
+  }
+  &__email{
+    max-width: 170px;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: $thirdlyBg;
+    border:none;
+    outline-color: $mainBg;
+  }
+  &__submit{
+    margin-left: -5px;
+    max-width:100px;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  &__copy{
+    padding: 35px 0;
+  }
+  &__copy-list{
+    display: flex;
+  }
+  &__copy-item{
+    margin: 0 15px;
+    position: relative;
+    text-transform: capitalize;
+  }
+  &__copy-item + .footer__copy-item::before{
+    content: "|";
+    color: inherit;
+    position: absolute;
+    left: -15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

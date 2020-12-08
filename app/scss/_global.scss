@@ -1,0 +1,24 @@
+.container{
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  color: $heading;
+}
+
+.btn{
+  background-color: $secondaryBg;
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  @extend %rubik-500;
+  padding: 25px 30px 20px;
+  cursor: pointer;
+  outline-color: rgb(176, 214, 214);
+}
+.arrow{
+  display: inline;
+  margin-left: 60px;
+}
